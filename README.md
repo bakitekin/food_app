@@ -4,25 +4,6 @@
 
 Food Delivery App is a mobile application that allows users to order food from various restaurants. With a user-friendly interface, the app makes the food ordering experience easy and efficient.
 
-## Video gif
-
-![](./assets/images/screen.gif)
-
-## Home Screen
-
-![](./assets/images/homescreen.png)
-
-## Cart Screen
-
-![](./assets/images/order.png)
-
-## Delivery Screen
-
-![](./assets/images/delivery.png)
-
-## Restaurant Screen
-
-![](./assets/images/menu.png)
 
 ## Features
 
