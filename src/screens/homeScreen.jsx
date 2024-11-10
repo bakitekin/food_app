@@ -1,6 +1,6 @@
 /* eslint-disable react-native/no-inline-styles */
 // import libraries
-import React from 'react';
+import React, {useState} from 'react';
 import {
   View,
   SafeAreaView,
@@ -17,17 +17,25 @@ import FeaturedRow from '../components/featuredRow';
 
 // create a component
 const HomeScreen = () => {
+  const [searchQuery, setSearchQuery] = useState('');
+
   return (
     <SafeAreaView className="bg-white">
+      {/* Search Bar */}
       <View className="flex-row items-center space-x-2 px-4 pb-2">
         <View className="flex-row flex-1 items-center p-3 rounded-full border border-gray-300">
           <Feather name="search" size={25} color="gray" />
-          <TextInput placeholder="Restaurant" className="flex-1 ml-2" />
+          <TextInput
+            placeholder="Search restaurants"
+            value={searchQuery}
+            onChangeText={setSearchQuery}
+            className="flex-1 ml-2"
+          />
           <View className="flex-row items-center space-x-1 border-0 border-l-2 pl-2 border-l-gray-300">
             <TouchableOpacity>
               <Feather name="map-pin" size={20} color="gray" />
             </TouchableOpacity>
-            <Text className="ml-2 text-gray-600">New York, NYC</Text>
+            <Text className="ml-2 text-gray-600">İstanbul, Türkiye</Text>
           </View>
         </View>
         <TouchableOpacity
@@ -36,21 +44,24 @@ const HomeScreen = () => {
           <Feather name="sliders" size={20} color="white" />
         </TouchableOpacity>
       </View>
+
+      {/* Main Content */}
       <ScrollView
         showsHorizontalScrollIndicator={false}
         contentContainerStyle={{paddingBottom: 20}}>
+        {/* Categories Component */}
         <Categories />
+
+        {/* Featured Rows */}
         <View className="mt-5">
-          {[featured, featured, featured].map((item, index) => {
-            return (
-              <FeaturedRow
-                key={index}
-                title={item.title}
-                restaurants={item.restaurants}
-                description={item.description}
-              />
-            );
-          })}
+          {[featured, featured, featured].map((item, index) => (
+            <FeaturedRow
+              key={index}
+              title={item.title}
+              restaurants={item.restaurants}
+              description={item.description}
+            />
+          ))}
         </View>
       </ScrollView>
     </SafeAreaView>

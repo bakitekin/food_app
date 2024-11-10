@@ -33,7 +33,7 @@ const RestaurantCard = ({item}) => {
           <View className="flex-row items-center space-x-1 mt-2">
             <Feather name="map-pin" size={15} color="gray" />
             <Text className="text-sm text-gray-700 ml-2 ">
-              Nearby • {item.address}
+              İstanbul • {item.address}
             </Text>
           </View>
         </View>

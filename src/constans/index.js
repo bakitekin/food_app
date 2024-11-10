@@ -45,9 +45,9 @@ export const featured = {
       description: 'Hot and spicy pizzas',
       lat: 38.2145602,
       lng: -85.5324269,
-      address: '432 second street',
+      address: '360 second street',
       stars: 4,
-      reviews: '4.4k',
+      reviews: '4.6k',
       category: 'Fast Food',
       dishes: [
         {
@@ -123,8 +123,8 @@ export const featured = {
       lat: 38.2145602,
       lng: -85.5324269,
       address: '432 second street',
-      stars: 4,
-      reviews: '4.4k',
+      stars: 5,
+      reviews: '5.k',
       category: 'Fast Food',
       dishes: [
         {
@@ -199,9 +199,9 @@ export const featured = {
       description: 'Hot and spicy pizzas',
       lat: 38.2145602,
       lng: -85.5324269,
-      address: '432 second street',
+      address: '560 second street',
       stars: 4,
-      reviews: '4.4k',
+      reviews: '4.3k',
       category: 'Fast Food',
       dishes: [
         {
@@ -276,9 +276,9 @@ export const featured = {
       description: 'Hot and spicy pizzas',
       lat: 38.2145602,
       lng: -85.5324269,
-      address: '432 second street',
+      address: '123 second street',
       stars: 4,
-      reviews: '4.4k',
+      reviews: '4.8k',
       category: 'Fast Food',
       dishes: [
         {
