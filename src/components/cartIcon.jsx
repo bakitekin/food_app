@@ -40,8 +40,8 @@ const CartIcon = () => {
         </Text>
         <Text
           style={{backgroundColor: 'rgba(255,255,255,0.3)'}}
-          className="font-extrabold text-white text-center text-lg p-2 px-4 rounded-full">
-          ${cartTotal.toFixed(2)}
+          className="font-extrabold text-white text-center text-lg p-2  rounded-full">
+          ${cartTotal}
         </Text>
       </TouchableOpacity>
     </View>

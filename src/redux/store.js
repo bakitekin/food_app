@@ -1,11 +1,11 @@
 // store redux toolkit
 import {configureStore} from '@reduxjs/toolkit';
-import restaurantSlice from './restaurantSlice';
-import {cartSlice} from './cartSlice';
+import restaurantReducer from './restaurantSlice';
+import cartReducer from './cartSlice';
 
 export const store = configureStore({
   reducer: {
-    restaurant: restaurantSlice,
-    cart: cartSlice,
+    restaurant: restaurantReducer,
+    cart: cartReducer,
   },
 });

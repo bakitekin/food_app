@@ -30,3 +30,7 @@ Food Delivery App is a mobile application that allows users to order food from v
 - React Native CLI: (Ensure development environment is set up for iOS and Android)
 - iOS: Xcode
 - Android: Android Studio
+
+## GIF
+
+![Screen](./assets/images/screen.gif)
